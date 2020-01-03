@@ -61,9 +61,9 @@ var Ball = function(center, r) {
 /*
 	   0
   A*********B
-  *			*
-3 *			*  1   顶点编号按照A->B->D->C 依次编号为0->1->2->3
-  *			*
+  *	    *
+3 *	    *  1   顶点编号按照A->B->D->C 依次编号为0->1->2->3
+  *	    *
   C*********D
 	   2
 
@@ -304,12 +304,11 @@ function draw(cell,ball,eIndex,s) {
 
 		for(var n = 0; n < length4; n += 4) {
 
-			//ctx.beginPath()
-			ctx.moveTo(temp4[n],temp4[n+1]);       //设置起点状态
-			ctx.lineTo(temp4[n+2],temp4[n+3]);       //设置末端状态
-			ctx.lineWidth = 0.3;          //设置线宽状态
-			ctx.strokeStyle = '#00FF00';  //设置线的颜色状态
-			ctx.stroke();              //进行绘制
+			ctx.moveTo(temp4[n],temp4[n+1]);      
+			ctx.lineTo(temp4[n+2],temp4[n+3]);       
+			ctx.lineWidth = 0.3;          
+			ctx.strokeStyle = '#00FF00'; 
+			ctx.stroke();             
 
 		}
 
